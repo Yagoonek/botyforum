@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boty w stumble guys</title>
+    <style>
+        /* Dodaj odpowiednie style, jak wcześniej */
+    </style>
+</head>
+<body>
+    <!-- Formularz rejestracji -->
+    <div class="register-form">
+        <h2>Rejestracja</h2>
+        <form id="registerForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Zarejestruj</button>
+        </form>
+    </div>
+
+    <!-- Formularz logowania -->
+    <div class="login-form">
+        <h2>Logowanie</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="loginEmail" name="email" required>
+
+            <label for="password">Hasło:</label>
+            <input type="password" id="loginPassword" name="password" required>
+
+            <button type="submit">Zaloguj</button>
+        </form>
+    </div>
+
+    <!-- Formularz wylogowania -->
+    <div class="logout-form" style="display: none;">
+        <form id="logoutForm">
+            <button type="submit">Wyloguj</button>
+        </form>
+    </div>
+
+    <!-- Formularz dodawania posta -->
+    <div class="new-post">
+        <form id="addPostForm">
+            <textarea id="postContent" placeholder="Napisz nowy post..."></textarea>
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+
+    <!-- Lista postów -->
+    <div class="posts">
+        <div id="postsList"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
